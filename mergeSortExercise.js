@@ -1,11 +1,10 @@
 /*
   Run the code in Node by typing
     node recursionExercise.js
+
+  Build a function mergeSort that takes in an array and returns a sorted array, using a recursive merge sort methodology.
 */
 
-console.log('--- Recursion Exercise ---');
-
-// TODO: Write simple merge(arguments must be already sorted);
 function merge(arr1, arr2) {
   if(typeof arr1 === 'number') arr1 = [arr1];
   if(typeof arr2 === 'number') arr2 = [arr2];
@@ -39,7 +38,6 @@ function merge(arr1, arr2) {
   return result;
 }
 
-// TODO: Write recursive mergeSort algorithm;
 function mergeSort(arr) {
   if(arr.length === 1) {
     return arr;
@@ -54,3 +52,4 @@ function mergeSort(arr) {
   }
 }
 console.log(mergeSort([2, 5, 3, 6, 4, 9, 14, 1, 7]));
+console.log(mergeSort([13, 2, 7, 19, 23, 8, 11, 13]));
